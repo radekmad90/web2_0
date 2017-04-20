@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ title }}</title>
+    <link rel='stylesheet' href='/stylesheets/style.css'/>
+</head>
+<body>
+<h1>{{ title }}</h1>
+<form method="POST" action="/samochody/dodaj_samochod">
+    <label for="marka">Marka:</label>
+    <input type="text"  name="marka"/>
+    <label for="model">Model:</label>
+    <input type="text" name="model"/>
+    <label for="rokProdukcji">Rok produkcji:</label>
+    <input type="number" value="2017" name="rokProdukcji"/>
+    <label for="nrRejestracyjny">Numer rejestracyjny:</label>
+    <input type="text" name="nrRejestracyjny"/>
+    <button type="submit" name="submit">Dodaj samochód</button>
+</form>
+
+
+</body>
+</html>

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ title }}</title>
+    <link rel='stylesheet' href='/stylesheets/style.css'/>
+</head>
+<br>
+<h1>{{ title }}</h1>
+{{#samochody}}
+    <b>Marka:{{ marka }}, model: {{model}}, rok produkcji: {{rokProdukcji}}, numer rejestracyjny: {{nrRejestracyjny}}</b><a href="/samochody/delete/{{ _id}}">Usuń</a></br>
+{{/samochody}}
+</br>
+<a href="/samochody/dodaj_samochod">Dodaj samochod</a>
+
+</body>
+</html>

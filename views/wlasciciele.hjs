@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ title }}</title>
+    <link rel='stylesheet' href='/stylesheets/style.css'/>
+</head>
+<br>
+<h1>{{ title }}</h1>
+{{#wlasciciele}}
+    <b>Imie:{{ imie }}, nazwisko: {{nazwisko}}, data urodzenia: {{dataUrodzenia}}</b><a href="/wlasciciele/delete/{{ _id}}">Usuń</a></br>
+    Posiada samochody:</br>
+    {{#samochody}}
+        <b>Marka:{{ id.marka }}, model: {{id.model}}, rok produkcji: {{id.rokProdukcji}}, numer rejestracyjny: {{id.nrRejestracyjny}}</b>
+        </br>
+    {{/samochody}}
+    </br>
+{{/wlasciciele}}
+</br>
+</body>
+</html>
